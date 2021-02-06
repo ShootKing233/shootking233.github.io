@@ -1,7 +1,4 @@
-div {
-    background-color: tomato;
-    border: 4em solid tomato;
-    border-radius: 25em;
+.centerDiv {
     position: absolute;
     top: 50%;
     left: 50%;
