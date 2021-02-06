@@ -4,18 +4,23 @@
 
 <head>
     <meta charset="utf-8" />
+    
     <title>Shooooot!</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="ShootKing的个人网站" />
     <meta name="keywords" content="ShootKing,ShootKing233" />
     <meta name="author" content="ShootKing233" />
     <link rel="shortcut icon" href="images/icon.svg" />
+
     <!--Bootstrap CSS文件-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
     <!--jQuery JS文件-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <!--Bootstrap JS文件-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="scripts/randomText.js"></script>
 </head>
 
 <body>
@@ -47,17 +52,17 @@
     <div class="container">
         <div class="row">
             <div class="col jumbotron" style="margin-right: 2%;">
-                <h4>第一列</h4>
-                <p>内容</p>
+                <h3>沙雕语录</h3>
+                <p id="randomText" onclick="setRandomText()">点我可以获取随机沙雕语录！</p>
                 <p>内容2</p>
             </div>
             <div class="col jumbotron" style="margin-right: 2%;">
-                <h4>第二列</h4>
+                <h3>第二列</h3>
                 <p>内容</p>
                 <p>内容2</p>
             </div>
             <div class="col jumbotron">
-                <h4>第三列</h4>
+                <h3>第三列</h3>
                 <p>内容</p>
                 <p>内容2</p>
             </div>
