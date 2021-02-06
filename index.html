@@ -5,22 +5,75 @@
 <head>
     <meta charset="utf-8" />
     <title>Shooooot!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="ShootKing的个人网站" />
     <meta name="keywords" content="ShootKing,ShootKing233" />
     <meta name="author" content="ShootKing233" />
     <link rel="shortcut icon" href="images/icon.svg" />
+    <!--Bootstrap CSS文件-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <!--jQuery JS文件-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!--Bootstrap JS文件-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <hr />
-    <p>ShootKing!</p>
-    <!--TODO 加入更多内容-->
-    <p><em>友情链接</em></p>
-    <hr />
-    <a href="https://space.bilibili.com/267034016"><img src="images/bilibili.svg" alt="Bilibili" width="64" height="64" /></a>
-    <a href="https://github.com/ShootKing233"><img src="images/github.svg" alt="GitHub" width="64" height="64" /></a>
-    <a href="http://vancraft.cn/"><img src="images/vancraft.png" alt="Vancraft"></a>
+    <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
+        <h1>Hello World!</h1>
+        <p>这里是shoot的个人网站awa</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <a class="navbar-brand"><img src="images/navbar-brand.svg" alt="网站导航" width="32" height="32"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">页面2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">页面3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col jumbotron" style="margin-right: 2%;">
+                <h3>第一列</h3>
+                <p>内容</p>
+                <p>内容2</p>
+            </div>
+            <div class="col jumbotron" style="margin-right: 2%;">
+                <h3>第二列</h3>
+                <p>内容</p>
+                <p>内容2</p>
+            </div>
+            <div class="col jumbotron">
+                <h3>第三列</h3>
+                <p>内容</p>
+                <p>内容2</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
+        <h2>友情链接</h2>
+        <p>
+            <a href="https://space.bilibili.com/267034016"><img src="images/bilibili.svg" alt="Bilibili" width="64"
+                    height="64" /></a>
+            <a href="https://github.com/ShootKing233"><img src="images/github.svg" alt="GitHub" width="64"
+                    height="64" /></a>
+            <a href="http://vancraft.cn/"><img src="images/vancraft.png" alt="Vancraft" width="64" height="64"></a>
+        </p>
+    </div>
 </body>
 
 </html>
