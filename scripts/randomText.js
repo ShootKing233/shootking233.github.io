@@ -7,14 +7,22 @@ function setRandomText() {
             var data = JSON.parse(xhr.responseText);
             var randomTextDiv = document.getElementById('randomTextDiv');
             var randomText = document.getElementById('randomText');
+            var textUrl = document.getElementById('textUrl');
+            if (textUrl != null){
+                randomTextDiv.removeChild(textUrl);
+            };
             randomTextDiv.removeChild(randomText);
             var newRandomText = document.createElement('p');
             newRandomText.setAttribute('onclick', 'setRandomText();');
             newRandomText.className = 'fadeEffect';
             newRandomText.id = 'randomText';
             newRandomText.innerText = data.hitokoto;
+            var newTextUrl = document.createElement('small');
+            newTextUrl.className = 'fadeEffect';
+            newTextUrl.innerHTML = '<a href="https://hitokoto.cn/?uuid=' + data.uuid + '">来源：一言</a>';
+            newTextUrl.id = 'textUrl';
             randomTextDiv.appendChild(newRandomText);
-            document.getElementById('textUrl').innerHTML = '<a href="https://hitokoto.cn/?uuid=' + data.uuid + '">来源：一言</a>';
+            randomTextDiv.appendChild(newTextUrl);
             console.log('成功获取了地址为 https://hitokoto.cn/?uuid=' + data.uuid + ' 的文本：' + data.hitokoto);
         };
     };
