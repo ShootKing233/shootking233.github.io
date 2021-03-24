@@ -2,102 +2,102 @@
 
 <html lang="zh">
 
-<head>
-    <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
 
-    <title>Shooooot!</title>
+		<title>Shooooot!</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <meta name="description" content="ShootKing的个人网站" />
-    <meta name="keywords" content="ShootKing,ShootKing233" />
-    <meta name="author" content="ShootKing233" />
-    <link rel="shortcut icon" href="/images/icon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<meta name="description" content="ShootKing的个人网站" />
+		<meta name="keywords" content="ShootKing,ShootKing233" />
+		<meta name="author" content="ShootKing233" />
+		<link rel="shortcut icon" href="./images/icon.svg" />
 
-    <!--Bootstrap CSS文件-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
-    <!--jQuery JS文件-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <!--Bootstrap JS文件-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+		<!--Bootstrap CSS文件-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+		<!--jQuery JS文件-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<!--Bootstrap JS文件-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--随机语录 JS文件-->
-    <script src="/scripts/randomText.js"></script>
-    <!--文字切换效果 CSS文件-->
-    <link rel="stylesheet" href="/styles/fadeEffect.css" />
-</head>
+		<!--随机语录 JS文件-->
+		<script src="./scripts/randomText.js"></script>
+		<!--文字切换效果 CSS文件-->
+		<link rel="stylesheet" href="./styles/fadeEffect.css" />
+	</head>
 
-<body>
-    <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
-        <h1>Hello World!</h1>
-        <p>这里是shoot的个人网站awa</p>
-    </div>
+	<body>
+		<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom: 0;">
+			<h1>Hello World!</h1>
+			<p>这里是shoot的个人网站awa</p>
+		</div>
 
-    <nav class="navbar navbar-expand-md bg-light navbar-light">
-        <a class="navbar-brand"><img src="images/navbar-brand.svg" alt="网站导航" width="32" height="32"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggle-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">主页</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">页面2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">页面3</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+		<nav class="navbar navbar-expand-md bg-light navbar-light">
+			<a class="navbar-brand"><img src="./images/navbar-brand.svg" alt="网站导航" width="32" height="32"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggle-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="./">主页</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./vc/">VC玩家数据</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">页面3</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;" id="randomTextDiv">
-                <h3>随机语录</h3>
-                <p id="randomText" onclick="setRandomText();" class="fadeEffect">点我可以获取随机语录！</p>
-            </div>
-            <div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;">
-                <h3>第二列</h3>
-                <p>内容</p>
-                <p>内容2</p>
-            </div>
-            <div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;">
-                <h3>第三列</h3>
-                <p>内容</p>
-                <p>内容2</p>
-            </div>
-        </div>
-    </div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;" id="randomTextDiv">
+					<h3>随机语录</h3>
+					<p id="randomText" onclick="setRandomText();" class="fadeEffect">点我可以获取随机语录！</p>
+				</div>
+				<div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;">
+					<h3>第二列</h3>
+					<p>内容</p>
+					<p>内容2</p>
+				</div>
+				<div class="col-md jumbotron" style="margin-left: 2em; margin-right: 2em;">
+					<h3>第三列</h3>
+					<p>内容</p>
+					<p>内容2</p>
+				</div>
+			</div>
+		</div>
 
-    <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
-        <div class="text-center">
-            <h2>友情链接</h2>
-            <a href="http://www.vancraft.cn/" data-toggle="tooltip" data-placement="bottom" title="Vancraft"><img
-                    src="/images/vancraft.png" alt="Vancraft" width="64" height="64"></a>
-            <a href="https://hitokoto.cn/" data-toggle="tooltip" data-placement="bottom" title="一言"><img
-                    src="/images/hitokoto.ico" alt="Hitokoto" width="64" height="64"></a>
-        </div>
-    </div>
+		<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0;">
+			<div class="text-center">
+				<h2>友情链接</h2>
+				<a href="http://www.vancraft.cn/" data-toggle="tooltip" data-placement="bottom" title="Vancraft"><img
+						src="./images/vancraft.png" alt="Vancraft" width="64" height="64"></a>
+				<a href="https://hitokoto.cn/" data-toggle="tooltip" data-placement="bottom" title="一言"><img
+						src="./images/hitokoto.ico" alt="Hitokoto" width="64" height="64"></a>
+			</div>
+		</div>
 
-    <hr />
+		<hr />
 
-    <div class="text-center">
-        <p>About Me
-            <br />
-            <a href="https://space.bilibili.com/267034016" data-toggle="tooltip" data-placement="bottom"
-                title="Bilibili"><img src="/images/bilibili.svg" alt="Bilibili" width="24" height="24" /></a>
-            <a href="https://github.com/ShootKing233" data-toggle="tooltip" data-placement="bottom" title="GitHub"><img
-                    src="/images/github.svg" alt="GitHub" width="24" height="24" /></a>
-        </p>
-    </div>
+		<div class="text-center">
+			<p>About Me
+				<br />
+				<a href="https://space.bilibili.com/267034016" data-toggle="tooltip" data-placement="bottom"
+					title="Bilibili"><img src="./images/bilibili.svg" alt="Bilibili" width="24" height="24" /></a>
+				<a href="https://github.com/ShootKing233" data-toggle="tooltip" data-placement="bottom"
+					title="GitHub"><img src="./images/github.svg" alt="GitHub" width="24" height="24" /></a>
+			</p>
+		</div>
 
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-</body>
+		<script>
+			$(document).ready(function() {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+	</body>
 
 </html>
