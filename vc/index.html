@@ -29,38 +29,45 @@
 	</head>
 
 	<body>
-		<div class="text-center container">
-			<p>每日玩家数据</p>
-			<div id="day_container" class="alert alert-info">
-				<script type="text/javascript">
-					fetch('https://cdn.jsdelivr.net/gh/VancraftServer/vc-info/vc_day_info.json')
-						.then((res) => res.json())
-						.then((data) => {
-							const line = new Line('day_container', {
-								data,
-								xField: 'time',
-								yField: 'player_num',
-							});
+		<div class="container">
+			<div class="alert alert-info">
+				<div class="text-center">
+					<p>每日玩家数据</p>
+					<div id="day_container" class="alert alert-primary">
+						<script type="text/javascript">
+							fetch('https://cdn.jsdelivr.net/gh/VancraftServer/vc-info@latest/vc_day_info.json')
+								.then((res) => res.json())
+								.then((data) => {
+									const line = new Line('day_container', {
+										data,
+										xField: 'time',
+										yField: 'player_num',
+										smooth: true,
+									});
 
-							line.render();
-						});
-				</script>
-			</div>
-			<p>每周玩家数据</p>
-			<div id="week_container" class="alert alert-info">
-				<script type="text/javascript">
-					fetch('https://cdn.jsdelivr.net/gh/VancraftServer/vc-info/vc_week_info.json')
-						.then((res) => res.json())
-						.then((data) => {
-							const line = new Line('week_container', {
-								data,
-								xField: 'time',
-								yField: 'player_num',
-							});
+									line.render();
+								});
+						</script>
+					</div>
+					<p>每周玩家数据</p>
+					<div id="week_container" class="alert alert-primary">
+						<script type="text/javascript">
+							fetch('https://cdn.jsdelivr.net/gh/VancraftServer/vc-info@latest/vc_week_info.json')
+								.then((res) => res.json())
+								.then((data) => {
+									const line = new Line('week_container', {
+										data,
+										xField: 'time',
+										yField: 'player_num',
+										smooth: true,
+									});
 
-							line.render();
-						});
-				</script>
+									line.render();
+								});
+						</script>
+					</div>
+					<a class="btn btn-outline-primary" href="/" role="button">返回主页</a>
+				</div>
 			</div>
 	</body>
 
