@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta content="webkit" name="renderer"/>
+    <meta content="webkit" name="force-rendering"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+
+    <!-- MDUI CSS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+          integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" rel="stylesheet"/>
+    <title>天津行程计划</title>
+</head>
+<body class="mdui-appbar-with-toolbar mdui-drawer-body-left mdui-color-theme mdui-color-theme-accent">
+
+<header class="mdui-appbar mdui-appbar-fixed" id="appbar">
+    <div class="mdui-toolbar">
+        <span class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#drawer', swipe: true}"><i
+                class="mdui-icon material-icons">menu</i></span>
+        <span class="mdui-typo-headline">天津</span>
+        <span class="mdui-typo-title">7月3日行程计划</span>
+    </div>
+</header>
+
+<div class="mdui-drawer" id="drawer">
+    <ul class="mdui-list">
+        <li class="mdui-list-item mdui-ripple">
+            <a href=".">
+                <i class="mdui-list-item-icon mdui-icon material-icons">looks_one</i>
+                <span class="mdui-list-item-content">7月1日</span>
+            </a>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <a href="7-2.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons">looks_two</i>
+                <span class="mdui-list-item-content">7月2日</span>
+            </a>
+        </li>
+        <li class="mdui-list-item mdui-list-item-active mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">looks_3</i>
+            <span class="mdui-list-item-content">7月3日</span>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+            <a href="7-4.html">
+                <i class="mdui-list-item-icon mdui-icon material-icons">looks_4</i>
+                <span class="mdui-list-item-content">7月4日</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="mdui-container mdui-typo" id="main-container">
+    <h1 class="mdui-typo-headline mdui-text-color-deep-orange-600">7月3日</h1>
+    以纸面计划为准
+</div>
+
+<!-- MDUI JavaScript -->
+<script crossorigin="anonymous" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"></script>
+</body>
+</html>
